@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sharepay example</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="structure.css">
+</head>
+
+<body>
+
+  <section id="connection">
+    <header>Connect to facebook</header>
+    <main class="centered compressed">
+      <div>
+        <div class="block">
+          <h1>Sharepay</h1>
+          <h2>A solution for organizing group expenses</h2>
+        </div>
+        <a class="button" href="#dashboard">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <span>Connect to facebook</span>
+        </a>
+      </div>
+    </main>
+  </section>
+
+  <section id="dashboard">
+    <header>Front page</header>
+    <main>
+      <div class="compressed hbox">
+        <h1>Sharepay</h1>
+        <span>Hello <strong>Xavier</strong>, welcome on your dashboard!</span>
+      </div>
+      <div class="aered">
+
+        <a class="button black-btn" href="#add-activity">
+          <i class="fa fa-plus" aria-hidden="true"></i>
+          <span>Add an activity</span>
+        </a>
+
+        <a class="button black-btn" href="#history">
+          <i class="fa fa-history" aria-hidden="true"></i>
+          <span>History</span>
+        </a>
+
+        <h2>Current activities</h2>
+
+        <ul class="box-list">
+          <li>
+            <div>
+              <h3>New Year 2017</h3>
+              <strong>members: </strong>
+              <span>6</span>,
+              <strong>amount: </strong>
+              <span>1280$</span>
+            </div>
+            <div>
+              <a class="button black-btn" href="#view-activity">
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                <span>View activity</span>
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <h3>Squash every week</h3>
+              <strong>members: </strong>
+              <span>2</span>,
+              <strong>amount: </strong>
+              <span>2890$</span>
+            </div>
+            <div>
+              <a class="button black-btn" href="#view-activity">
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                <span>View activity</span>
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <h3>Cinema every sunday</h3>
+              <strong>members: </strong>
+              <span>6</span>,
+              <strong>amount: </strong>
+              <span>200$</span>
+            </div>
+            <div>
+              <a class="button black-btn" href="#view-activity">
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                <span>View activity</span>
+              </a>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </main>
+  </section>
+
+  <section id="add-activity">
+    <header>Add/Edit an activity</header>
+    <main>
+      <div class="compressed hbox">
+        <h1>Sharepay</h1>
+        <span>Hello <strong>Xavier</strong>, let's create an activity!</span>
+      </div>
+      <div class="aered">
+
+        <a class="button black-btn" href="#dashboard">
+          <i class="fa fa-home" aria-hidden="true"></i>
+          <span>Dashboard</span>
+        </a>
+
+        <form class="formlet">
+          <h2>Describe your activity</h2>
+          <input class="full" type="text" placeholder="Your activity name">
+
+          <h2>Add some buddies</h2>
+
+          <input type="text" placeholder="New buddy" value="Romain">
+          <a class="button black-btn" href="#add-activity">
+            <i class="fa fa-user-plus" aria-hidden="true"></i>
+            <span>Add</span>
+          </a>
+          <ul>
+            <li>
+              <input class="removable" type="checkbox" name="buddies[]" value="Vincent" checked="checked">
+              <span>Vincent</span>
+            </li>
+            <li>
+              <input class="removable" type="checkbox" name="buddies[]" value="Mehdi" checked="checked">
+              <span>Mehdi</span>
+            </li>
+            <li>
+              <input class="removable" type="checkbox" name="buddies[]" value="Thomas" checked="checked">
+              <span>Thomas</span>
+            </li>
+            <li>
+              <input class="removable" type="checkbox" name="buddies[]" value="Kevin" checked="checked">
+              <span>Kevin</span>
+            </li>
+            <li>
+              <input class="removable" type="checkbox" name="buddies[]" value="Xavier" checked="checked">
+              <span>Xavier</span>
+            </li>
+          </ul>
+
+          <a class="button black-btn" href="#dashboard">
+            <i class="fa fa-save" aria-hidden="true"></i>
+            <span>Save activity</span>
+          </a>
+
+        </form>
+
+      </div>
+    </main>
+  </section>
+
+  <section id="view-activity">
+    <header>View an activity</header>
+    <main>
+      <div class="compressed hbox">
+        <h1>Sharepay</h1>
+        <span>Hello <strong>Xavier</strong>,
+        here is the activity
+        "<strong>New Year 2017</strong>"</span>
+      </div>
+      <div class="aered">
+
+        <a class="button black-btn" href="#dashboard">
+          <i class="fa fa-home" aria-hidden="true"></i>
+          <span>Dashboard</span>
+        </a>
+
+        <a class="button black-btn" href="#add-activity">
+          <i class="fa fa-pencil" aria-hidden="true"></i>
+          <span>Update activity</span>
+        </a>
+
+        <a class="button black-btn" href="#view-expense">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <span>Add expense</span>
+        </a>
+
+        <a class="button black-btn" href="#do-accounts">
+          <i class="fa fa-credit-card-alt " aria-hidden="true"></i>
+          <span>Do the accounts</span>
+        </a>
+
+        <a class="button black-btn" href="#finalize">
+          <i class="fa fa-check " aria-hidden="true"></i>
+          <span>Finalize the activity</span>
+        </a>
+
+        <h2>New Year 2017 : 1280$</h2>
+
+        <div class="expenses">
+          <div>
+            <div>
+              <span style="height: 97%;"></span>
+              <span style="height: 53%;"></span>
+              <span style="height: 36%;"></span>
+              <span style="height: 63%;"></span>
+              <span style="height: 22%;"></span>
+              <span style="height: 56%;"></span>
+              <span style="height: 28%;"></span>
+            </div>
+            <div>
+              <span>Xavier</span>
+              <span>Vincent</span>
+              <span>Arnaud</span>
+              <span>Thomas</span>
+              <span>Kevin</span>
+              <span>Mehdi</span>
+              <span>Romain</span>
+            </div>
+          </div>
+        </div>
+
+        <h2>Expenses</h2>
+
+        <ul class="box-list">
+
+          <li>
+            <div>
+              <h3>Buy some beers</h3>
+              <strong>for: </strong>
+              <span>6</span>,
+              <strong>amount: </strong>
+              <span>200$</span>
+            </div>
+            <div>
+              <a class="button black-btn" href="#view-expense">
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                <span>View expense</span>
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <h3>Buy some chips</h3>
+              <strong>for: </strong>
+              <span>6</span>,
+              <strong>amount: </strong>
+              <span>40$</span>
+            </div>
+            <div>
+              <a class="button black-btn" href="#view-expense">
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                <span>View expense</span>
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <h3>Buy some fireworks</h3>
+              <strong>for: </strong>
+              <span>6</span>,
+              <strong>amount: </strong>
+              <span>40$</span>
+            </div>
+            <div>
+              <a class="button black-btn" href="#view-expense">
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                <span>View expense</span>
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <h3>Buy some foods (vegan)</h3>
+              <strong>for: </strong>
+              <span>2</span>,
+              <strong>amount: </strong>
+              <span>400$</span>
+            </div>
+            <div>
+              <a class="button black-btn" href="#view-expense">
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                <span>View expense</span>
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <h3>Buy some foods</h3>
+              <strong>for: </strong>
+              <span>7</span>,
+              <strong>amount: </strong>
+              <span>1000$</span>
+            </div>
+            <div>
+              <a class="button black-btn" href="#view-expense">
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                <span>View expense</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </section>
+
+
+    <section id="history">
+      <header>History</header>
+      <main>
+        <div class="compressed hbox">
+          <h1>Sharepay</h1>
+          <span>Hello <strong>Xavier</strong>, welcome on your past activities!</span>
+        </div>
+        <div class="aered">
+
+
+          <a class="button black-btn" href="#dashboard">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <span>Dashboard</span>
+          </a>
+
+          <h2>Past activities</h2>
+
+          <ul class="box-list">
+            <li>
+              <div>
+                <h3>New Year 2016</h3>
+                <strong>members: </strong>
+                <span>6</span>,
+                <strong>amount: </strong>
+                <span>1880$</span>
+              </div>
+              <div>
+                <a class="button black-btn" href="#finalize">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  <span>View activity</span>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <h3>Squash every week</h3>
+                <strong>members: </strong>
+                <span>2</span>,
+                <strong>amount: </strong>
+                <span>2890$</span>
+              </div>
+              <div>
+                <a class="button black-btn" href="#finalize">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  <span>View activity</span>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <h3>Cinema every sunday</h3>
+                <strong>members: </strong>
+                <span>6</span>,
+                <strong>amount: </strong>
+                <span>200$</span>
+              </div>
+              <div>
+                <a class="button black-btn" href="#finalize">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  <span>View activity</span>
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </main>
+    </section>
+
+    <section id="view-expense">
+      <header>Add/Edit an expense</header>
+      <main>
+        <div class="compressed hbox">
+          <h1>Sharepay</h1>
+          <span>Hello <strong>Xavier</strong>, let's add a new expense!</span>
+        </div>
+        <div class="aered">
+
+
+          <a class="button black-btn" href="#dashboard">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <span>Dashboard</span>
+          </a>
+
+          <a class="button black-btn" href="#view-activity">
+            <i class="fa fa-search-plus" aria-hidden="true"></i>
+            <span>Back to the activity</span>
+          </a>
+
+          <form class="formlet">
+            <h2>Describe your expense</h2>
+            <input class="full" type="text" placeholder="Your expense label">
+            <div class="cost-box">
+              <div>
+                <input type="number" placeholder="0" value="0">,
+                <input type="number" placeholder="00" value="00">
+                <i class="fa fa-usd" aria-hidden="true"></i>
+              </div>
+              <div>
+                <select name="paid">
+                  <option>Xavier</option>
+                  <option>Vincent</option>
+                  <option>Arnaud</option>
+                  <option>Thomas</option>
+                  <option>Kevin</option>
+                  <option>Mehdi</option>
+                  <option>Romain</option>
+                </select>
+              </div>
+            </div>
+
+            <h2>It benefits to</h2>
+
+            <ul>
+              <li>
+                <input class="removable" type="checkbox" name="buddies[]" value="Vincent" checked="checked">
+                <span>Vincent</span>
+              </li>
+              <li>
+                <input class="removable" type="checkbox" name="buddies[]" value="Mehdi" checked="checked">
+                <span>Mehdi</span>
+              </li>
+              <li>
+                <input class="removable" type="checkbox" name="buddies[]" value="Thomas" checked="checked">
+                <span>Thomas</span>
+              </li>
+              <li>
+                <input class="removable" type="checkbox" name="buddies[]" value="Kevin" checked="checked">
+                <span>Kevin</span>
+              </li>
+              <li>
+                <input class="removable" type="checkbox" name="buddies[]" value="Xavier" checked="checked">
+                <span>Xavier</span>
+              </li>
+
+              <li>
+                <input class="removable" type="checkbox" name="buddies[]" value="Romain" checked="checked">
+                <span>Romain</span>
+              </li>
+            </ul>
+
+            <a class="button black-btn" href="#view-activity">
+              <i class="fa fa-save" aria-hidden="true"></i>
+              <span>Save expense</span>
+            </a>
+
+          </form>
+
+        </div>
+      </main>
+    </section>
+
+    <section id="do-accounts">
+      <header>Compute the accounts</header>
+      <main>
+        <div class="compressed hbox">
+          <h1>Sharepay</h1>
+          <span>Hello <strong>Xavier</strong>, Good accounts make good friends!</span>
+        </div>
+        <div class="aered">
+
+
+          <a class="button black-btn" href="#dashboard">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <span>Dashboard</span>
+          </a>
+
+          <h2>Rebalancing of "New Year 2017"</h2>
+          <ul class="account-list">
+            <li>
+              <div>Kevin</div>
+              <div>
+                gives
+                <span class="to-paid">500.10$</span>
+                to
+              </div>
+              <div>Xavier</div>
+            </li>
+            <li>
+              <div>Xavier</div>
+              <div>
+                gives
+                <span class="to-paid">111.59$</span>
+                to
+              </div>
+              <div>Mehdi</div>
+            </li>
+            <li>
+              <div>Mehdi</div>
+              <div>
+                gives
+                <span class="to-paid">225.28$</span>
+                to
+              </div>
+              <div>Arnaud</div>
+            </li>
+            <li>
+              <div>Arnaud</div>
+              <div>
+                gives
+                <span class="to-paid">700.00$</span>
+                to
+              </div>
+              <div>Vincent</div>
+            </li>
+            <li>
+              <div>Vincent</div>
+              <div>
+                gives
+                <span class="to-paid">200.02$</span>
+                to
+              </div>
+              <div>Romain</div>
+            </li>
+            <li>
+              <div>Romain</div>
+              <div>
+                gives
+                <span class="to-paid">199.99$</span>
+                to
+              </div>
+              <div>Thomas</div>
+            </li>
+            <li>
+              <div>Thomas</div>
+              <div>
+                gives
+                <span class="to-paid">896.19$</span>
+                to
+              </div>
+              <div>Kevin</div>
+            </li>
+          </ul>
+          <a class="button black-btn" href="#finalize">
+            <i class="fa fa-check " aria-hidden="true"></i>
+            <span>Finalize the activity</span>
+          </a>
+        </div>
+      </main>
+    </section>
+
+
+
+      <section id="finalize">
+        <header>A finalized activity</header>
+        <main class="unscrollable">
+          <div class="compressed hbox">
+            <h1>Sharepay</h1>
+            <span>Hello <strong>Xavier</strong>,
+            here is the activity
+            "<strong>New Year 2017</strong>"</span>
+          </div>
+          <div class="aered">
+
+            <a class="button black-btn" href="#dashboard">
+              <i class="fa fa-home" aria-hidden="true"></i>
+              <span>Dashboard</span>
+            </a>
+
+            <a class="button black-btn" href="#add-activity">
+              <i class="fa fa-pencil" aria-hidden="true"></i>
+              <span>Update activity</span>
+            </a>
+
+            <a class="button black-btn" href="#view-expense">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <span>Add expense</span>
+            </a>
+
+            <a class="button black-btn" href="#do-accounts">
+              <i class="fa fa-credit-card-alt " aria-hidden="true"></i>
+              <span>Do the accounts</span>
+            </a>
+
+            <a class="button black-btn" href="#finalize">
+              <i class="fa fa-check " aria-hidden="true"></i>
+              <span>Finalize the activity</span>
+            </a>
+
+            <h2>New Year 2017 : 1280$</h2>
+
+            <div class="expenses">
+              <div>
+                <div>
+                  <span style="height: 97%;"></span>
+                  <span style="height: 53%;"></span>
+                  <span style="height: 36%;"></span>
+                  <span style="height: 63%;"></span>
+                  <span style="height: 22%;"></span>
+                  <span style="height: 56%;"></span>
+                  <span style="height: 28%;"></span>
+                </div>
+                <div>
+                  <span>Xavier</span>
+                  <span>Vincent</span>
+                  <span>Arnaud</span>
+                  <span>Thomas</span>
+                  <span>Kevin</span>
+                  <span>Mehdi</span>
+                  <span>Romain</span>
+                </div>
+              </div>
+            </div>
+
+            <h2>Expenses</h2>
+
+            <ul class="box-list">
+
+              <li>
+                <div>
+                  <h3>Buy some beers</h3>
+                  <strong>for: </strong>
+                  <span>6</span>,
+                  <strong>amount: </strong>
+                  <span>200$</span>
+                </div>
+                <div>
+                  <a class="button black-btn" href="#view-expense">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                    <span>View expense</span>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <h3>Buy some chips</h3>
+                  <strong>for: </strong>
+                  <span>6</span>,
+                  <strong>amount: </strong>
+                  <span>40$</span>
+                </div>
+                <div>
+                  <a class="button black-btn" href="#view-expense">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                    <span>View expense</span>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <h3>Buy some fireworks</h3>
+                  <strong>for: </strong>
+                  <span>6</span>,
+                  <strong>amount: </strong>
+                  <span>40$</span>
+                </div>
+                <div>
+                  <a class="button black-btn" href="#view-expense">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                    <span>View expense</span>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <h3>Buy some foods (vegan)</h3>
+                  <strong>for: </strong>
+                  <span>2</span>,
+                  <strong>amount: </strong>
+                  <span>400$</span>
+                </div>
+                <div>
+                  <a class="button black-btn" href="#view-expense">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                    <span>View expense</span>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <h3>Buy some foods</h3>
+                  <strong>for: </strong>
+                  <span>7</span>,
+                  <strong>amount: </strong>
+                  <span>1000$</span>
+                </div>
+                <div>
+                  <a class="button black-btn" href="#view-expense">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                    <span>View expense</span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="overall">
+          </div>
+          <div class="over-overall">
+            <div>
+              <h2>Finalized activity</h2>
+              <a class="button black-btn" href="#do-accounts">
+                <i class="fa fa-credit-card-alt " aria-hidden="true"></i>
+                <span>See the accounts</span>
+              </a>
+
+              <br/>
+
+              <a class="button black-btn" href="#view-activity">
+                <i class="fa fa-check " aria-hidden="true"></i>
+                <span>Re-open the activity</span>
+              </a>
+
+              <br />
+
+              <a class="button black-btn" href="#dashboard">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <span>Dashboard</span>
+              </a>
+            </div>
+          </div>
+        </main>
+      </section>
+
+
+
+<!--
+    <section id="">
+      <header>New page</header>
+      <main>
+        <div class="compressed hbox">
+          <h1>Sharepay</h1>
+          <span>Hello <strong>Xavier</strong>, custom message!</span>
+        </div>
+        <div class="aered">
+
+
+          <a class="button black-btn" href="#dashboard">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <span>Dashboard</span>
+          </a>
+        </div>
+      </main>
+    </section>
+-->
+
+</body>
+
+</html>
